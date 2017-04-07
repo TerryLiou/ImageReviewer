@@ -26,7 +26,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="414"/>
                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="ipA-F8-cn3" secondAttribute="height" multiplier="1:1" id="qEn-jQ-D2t"/>
+                                    <constraint firstAttribute="width" secondItem="ipA-F8-cn3" secondAttribute="height" multiplier="1:1" id="fgC-qG-3Qz"/>
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iwr-fB-IOx">
@@ -40,10 +40,9 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Bjc-PK-fQA">
-                                <rect key="frame" x="41.666666666666657" y="480" width="331" height="162"/>
+                                <rect key="frame" x="41.666666666666657" y="480" width="331" height="192"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="162" id="Cbn-vb-tkL"/>
                                     <constraint firstAttribute="width" constant="331" id="kB0-Hm-Lgi"/>
                                 </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -62,11 +61,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QgH-Kw-iDm">
-                                <rect key="frame" x="127" y="654" width="160" height="44"/>
+                                <rect key="frame" x="127" y="684" width="160" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="odu-Hz-4KK"/>
                                     <constraint firstAttribute="width" constant="160" id="y34-yT-Fi1"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title="Button"/>
                             </button>
                         </subviews>
@@ -75,6 +75,7 @@
                             <constraint firstItem="iwr-fB-IOx" firstAttribute="centerX" secondItem="jl3-7o-sOF" secondAttribute="centerX" id="0K7-M8-Ziw"/>
                             <constraint firstItem="Bjc-PK-fQA" firstAttribute="top" secondItem="iwr-fB-IOx" secondAttribute="bottom" constant="20" id="11V-X1-o0S"/>
                             <constraint firstItem="QgH-Kw-iDm" firstAttribute="top" secondItem="Bjc-PK-fQA" secondAttribute="bottom" constant="12" id="9vs-EV-85z"/>
+                            <constraint firstItem="g70-p7-70z" firstAttribute="top" secondItem="QgH-Kw-iDm" secondAttribute="bottom" constant="8" id="N4Y-mw-qrN"/>
                             <constraint firstItem="iwr-fB-IOx" firstAttribute="top" secondItem="ipA-F8-cn3" secondAttribute="bottom" constant="10" id="SUS-m1-Qa6"/>
                             <constraint firstItem="Bjc-PK-fQA" firstAttribute="centerX" secondItem="jl3-7o-sOF" secondAttribute="centerX" id="Uiu-BY-1v1"/>
                             <constraint firstAttribute="trailing" secondItem="ipA-F8-cn3" secondAttribute="trailing" id="bvM-dm-anx"/>
@@ -86,6 +87,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="ImageButton" destination="QgH-Kw-iDm" id="rqu-97-nQq"/>
                         <outlet property="imageView" destination="ipA-F8-cn3" id="v4m-UA-zbm"/>
                     </connections>
                 </viewController>
