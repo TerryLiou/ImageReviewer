@@ -41,7 +41,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8AB6E31B1E973B7B00AA2FA8 /* New Group */ = {
+		8AB6E31B1E973B7B00AA2FA8 /* ImageTable */ = {
 			isa = PBXGroup;
 			children = (
 				8AB6E3131E972EA000AA2FA8 /* ImageTable.storyboard */,
@@ -49,12 +49,15 @@
 				8AB6E3181E97308B00AA2FA8 /* ImageTableViewCell.xib */,
 				8AB6E3171E97308B00AA2FA8 /* ImageTableViewCell.swift */,
 			);
-			name = "New Group";
+			name = ImageTable;
+			path = ImageReviewer;
 			sourceTree = "<group>";
 		};
 		A0C515D61E972117008CEAE4 = {
 			isa = PBXGroup;
 			children = (
+				A0D56F991E97544E0023698B /* ImageDetail */,
+				8AB6E31B1E973B7B00AA2FA8 /* ImageTable */,
 				A0C515E11E972118008CEAE4 /* ImageReviewer */,
 				A0C515E01E972118008CEAE4 /* Products */,
 			);
@@ -72,12 +75,19 @@
 			isa = PBXGroup;
 			children = (
 				A0C515E21E972118008CEAE4 /* AppDelegate.swift */,
-				8AB6E31B1E973B7B00AA2FA8 /* New Group */,
 				A0C515E91E972118008CEAE4 /* Assets.xcassets */,
 				A0C515EE1E972118008CEAE4 /* Info.plist */,
+			);
+			path = ImageReviewer;
+			sourceTree = "<group>";
+		};
+		A0D56F991E97544E0023698B /* ImageDetail */ = {
+			isa = PBXGroup;
+			children = (
 				8419AE2B1E97279000142780 /* ImagePicker.storyboard */,
 				8419AE2D1E9731F300142780 /* ImagePickerViewController.swift */,
 			);
+			name = ImageDetail;
 			path = ImageReviewer;
 			sourceTree = "<group>";
 		};
@@ -91,6 +101,7 @@
 				A0C515DB1E972117008CEAE4 /* Sources */,
 				A0C515DC1E972117008CEAE4 /* Frameworks */,
 				A0C515DD1E972117008CEAE4 /* Resources */,
+				A0D56F9A1E9754B20023698B /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -150,6 +161,23 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A0D56F9A1E9754B20023698B /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A0C515DB1E972117008CEAE4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -157,7 +185,6 @@
 			files = (
 				8AB6E3191E97308B00AA2FA8 /* ImageTableViewCell.swift in Sources */,
 				8419AE2E1E9731F300142780 /* ImagePickerViewController.swift in Sources */,
-				A0C515E51E972118008CEAE4 /* ViewController.swift in Sources */,
 				A0C515E31E972118008CEAE4 /* AppDelegate.swift in Sources */,
 				8AB6E3161E97300100AA2FA8 /* ImageTableViewController.swift in Sources */,
 			);

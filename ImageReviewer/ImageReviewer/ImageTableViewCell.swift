@@ -39,10 +39,9 @@ class ImageTableViewCell: UITableViewCell {
 //            
 //        }
 
-        
         insetDot.layer.cornerRadius = (insetDot.bounds.width)/2
         outsiteDot.layer.cornerRadius = (outsiteDot.bounds.width)/2
-        
+
     }
-    
+
 }
