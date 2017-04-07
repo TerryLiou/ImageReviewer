@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="LMP-DO-nkp">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="LMP-DO-nkp">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -22,9 +22,7 @@
                             <outlet property="delegate" destination="oas-7j-e82" id="l4q-GR-Yw9"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Nvw-am-tup">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="6FW-gO-4Jc"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="Nvw-am-tup"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sld-rw-71M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

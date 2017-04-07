@@ -8,22 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		8419AE2C1E97279000142780 /* ImagePicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8419AE2B1E97279000142780 /* ImagePicker.storyboard */; };
+		8419AE2E1E9731F300142780 /* ImageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8419AE2D1E9731F300142780 /* ImageDetailViewController.swift */; };
 		8AB6E3141E972EA000AA2FA8 /* ImageTable.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AB6E3131E972EA000AA2FA8 /* ImageTable.storyboard */; };
 		8AB6E3161E97300100AA2FA8 /* ImageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB6E3151E97300100AA2FA8 /* ImageTableViewController.swift */; };
 		8AB6E3191E97308B00AA2FA8 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB6E3171E97308B00AA2FA8 /* ImageTableViewCell.swift */; };
 		8AB6E31A1E97308B00AA2FA8 /* ImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AB6E3181E97308B00AA2FA8 /* ImageTableViewCell.xib */; };
-		8AB6E33F1E9752D100AA2FA8 /* Image.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8AB6E33D1E9752D100AA2FA8 /* Image.xcdatamodeld */; };
 		A0C515E31E972118008CEAE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C515E21E972118008CEAE4 /* AppDelegate.swift */; };
 		A0C515EA1E972118008CEAE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0C515E91E972118008CEAE4 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8419AE2B1E97279000142780 /* ImagePicker.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ImagePicker.storyboard; sourceTree = "<group>"; };
+		8419AE2D1E9731F300142780 /* ImageDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDetailViewController.swift; sourceTree = "<group>"; };
 		8AB6E3131E972EA000AA2FA8 /* ImageTable.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ImageTable.storyboard; sourceTree = "<group>"; };
 		8AB6E3151E97300100AA2FA8 /* ImageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTableViewController.swift; sourceTree = "<group>"; };
 		8AB6E3171E97308B00AA2FA8 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
 		8AB6E3181E97308B00AA2FA8 /* ImageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageTableViewCell.xib; sourceTree = "<group>"; };
-		8AB6E33E1E9752D100AA2FA8 /* Image.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Image.xcdatamodel; sourceTree = "<group>"; };
 		A0C515DF1E972118008CEAE4 /* ImageReviewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageReviewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C515E21E972118008CEAE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0C515E91E972118008CEAE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -41,7 +41,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8AB6E31B1E973B7B00AA2FA8 /* New Group */ = {
+		8AB6E31B1E973B7B00AA2FA8 /* ImageTable */ = {
 			isa = PBXGroup;
 			children = (
 				8AB6E3131E972EA000AA2FA8 /* ImageTable.storyboard */,
@@ -49,12 +49,15 @@
 				8AB6E3181E97308B00AA2FA8 /* ImageTableViewCell.xib */,
 				8AB6E3171E97308B00AA2FA8 /* ImageTableViewCell.swift */,
 			);
-			name = "New Group";
+			name = ImageTable;
+			path = ImageReviewer;
 			sourceTree = "<group>";
 		};
 		A0C515D61E972117008CEAE4 = {
 			isa = PBXGroup;
 			children = (
+				A0D56F991E97544E0023698B /* ImageDetail */,
+				8AB6E31B1E973B7B00AA2FA8 /* ImageTable */,
 				A0C515E11E972118008CEAE4 /* ImageReviewer */,
 				A0C515E01E972118008CEAE4 /* Products */,
 			);
@@ -72,12 +75,19 @@
 			isa = PBXGroup;
 			children = (
 				A0C515E21E972118008CEAE4 /* AppDelegate.swift */,
-				8AB6E31B1E973B7B00AA2FA8 /* New Group */,
 				A0C515E91E972118008CEAE4 /* Assets.xcassets */,
 				A0C515EE1E972118008CEAE4 /* Info.plist */,
-				8AB6E33D1E9752D100AA2FA8 /* Image.xcdatamodeld */,
-				8419AE2B1E97279000142780 /* ImagePicker.storyboard */,
 			);
+			path = ImageReviewer;
+			sourceTree = "<group>";
+		};
+		A0D56F991E97544E0023698B /* ImageDetail */ = {
+			isa = PBXGroup;
+			children = (
+				8419AE2B1E97279000142780 /* ImagePicker.storyboard */,
+				8419AE2D1E9731F300142780 /* ImageDetailViewController.swift */,
+			);
+			name = ImageDetail;
 			path = ImageReviewer;
 			sourceTree = "<group>";
 		};
@@ -91,6 +101,7 @@
 				A0C515DB1E972117008CEAE4 /* Sources */,
 				A0C515DC1E972117008CEAE4 /* Frameworks */,
 				A0C515DD1E972117008CEAE4 /* Resources */,
+				A0D56F9A1E9754B20023698B /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -150,13 +161,30 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A0D56F9A1E9754B20023698B /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A0C515DB1E972117008CEAE4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				8AB6E3191E97308B00AA2FA8 /* ImageTableViewCell.swift in Sources */,
-				8AB6E33F1E9752D100AA2FA8 /* Image.xcdatamodeld in Sources */,
+				8419AE2E1E9731F300142780 /* ImageDetailViewController.swift in Sources */,
 				A0C515E31E972118008CEAE4 /* AppDelegate.swift in Sources */,
 				8AB6E3161E97300100AA2FA8 /* ImageTableViewController.swift in Sources */,
 			);
@@ -304,19 +332,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		8AB6E33D1E9752D100AA2FA8 /* Image.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				8AB6E33E1E9752D100AA2FA8 /* Image.xcdatamodel */,
-			);
-			currentVersion = 8AB6E33E1E9752D100AA2FA8 /* Image.xcdatamodel */;
-			path = Image.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = A0C515D71E972117008CEAE4 /* Project object */;
 }
