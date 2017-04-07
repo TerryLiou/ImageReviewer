@@ -13,7 +13,8 @@ class ImagePickerViewController: UIViewController, UIImagePickerControllerDelega
         imageView.addGestureRecognizer(tap)
         imageView.isUserInteractionEnabled = true
         
-        addButton()
+        addSaveButton()
+        addCloseButton()
     }
     
     func pickImage() {
@@ -26,7 +27,7 @@ class ImagePickerViewController: UIViewController, UIImagePickerControllerDelega
        
     }
     
-    func addButton() {
+    func addSaveButton() {
         view.addSubview(ImageButton)
         var isEditing = false
         if isEditing {
@@ -45,6 +46,10 @@ class ImagePickerViewController: UIViewController, UIImagePickerControllerDelega
         ImageButton.layer.shadowRadius = 5
         ImageButton.layer.shadowOpacity = 1.0
         ImageButton.layer.shouldRasterize = true
+        
+    }
+    
+    func addCloseButton() {
         
     }
     override func didReceiveMemoryWarning() {

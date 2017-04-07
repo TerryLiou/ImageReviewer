@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -69,13 +70,23 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title="Button"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2r6-Bn-d6E">
+                                <rect key="frame" x="20" y="29" width="36" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="Ptr-Qi-gB1"/>
+                                    <constraint firstAttribute="width" constant="36" id="wi5-yE-23l"/>
+                                </constraints>
+                                <state key="normal" image="button_close"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="2r6-Bn-d6E" firstAttribute="top" secondItem="jl3-7o-sOF" secondAttribute="topMargin" constant="29" id="0Cx-mb-6Uo"/>
                             <constraint firstItem="iwr-fB-IOx" firstAttribute="centerX" secondItem="jl3-7o-sOF" secondAttribute="centerX" id="0K7-M8-Ziw"/>
                             <constraint firstItem="Bjc-PK-fQA" firstAttribute="top" secondItem="iwr-fB-IOx" secondAttribute="bottom" constant="20" id="11V-X1-o0S"/>
                             <constraint firstItem="QgH-Kw-iDm" firstAttribute="top" secondItem="Bjc-PK-fQA" secondAttribute="bottom" constant="12" id="9vs-EV-85z"/>
                             <constraint firstItem="g70-p7-70z" firstAttribute="top" secondItem="QgH-Kw-iDm" secondAttribute="bottom" constant="8" id="N4Y-mw-qrN"/>
+                            <constraint firstItem="2r6-Bn-d6E" firstAttribute="leading" secondItem="jl3-7o-sOF" secondAttribute="leading" constant="20" id="Oq3-L8-vLi"/>
                             <constraint firstItem="iwr-fB-IOx" firstAttribute="top" secondItem="ipA-F8-cn3" secondAttribute="bottom" constant="10" id="SUS-m1-Qa6"/>
                             <constraint firstItem="Bjc-PK-fQA" firstAttribute="centerX" secondItem="jl3-7o-sOF" secondAttribute="centerX" id="Uiu-BY-1v1"/>
                             <constraint firstAttribute="trailing" secondItem="ipA-F8-cn3" secondAttribute="trailing" id="bvM-dm-anx"/>
@@ -96,4 +107,7 @@
             <point key="canvasLocation" x="196" y="174"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="button_close" width="44" height="44"/>
+    </resources>
 </document>
