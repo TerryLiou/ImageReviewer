@@ -21,6 +21,11 @@ class ImageDetailViewController: UIViewController, UIImagePickerControllerDelega
         addCloseButton()
     }
 
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+
+        return UIStatusBarStyle.lightContent
+    }
+
     func pickImage() {
         let imagePicker = UIImagePickerController()
         imagePicker.delegate = self
