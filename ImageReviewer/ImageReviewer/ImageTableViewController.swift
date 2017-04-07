@@ -31,15 +31,15 @@ class ImageTableViewController: UITableViewController {
 
     func setBarButtonItem() {
 
-        let barButton = UIBarButtonItem.init(title: "My Journals", style: .plain, target: nil, action: nil)
+        let leftBarButton = UIBarButtonItem.init(title: "My Journals", style: .plain, target: nil, action: nil)
 
-        barButton.isEnabled = false
+        leftBarButton.isEnabled = false
 
         let font = UIFont.systemFont(ofSize: 20, weight: UIFontWeightSemibold)
 
         print(font)
 
-        barButton.setTitleTextAttributes([
+        leftBarButton.setTitleTextAttributes([
 
             NSFontAttributeName: font,
             NSForegroundColorAttributeName: UIColor(red: 67/255, green: 87/255, blue: 97/255, alpha: 1.0)
@@ -47,8 +47,15 @@ class ImageTableViewController: UITableViewController {
             ],
                                          for: .normal)
 
-        self.navigationItem.leftBarButtonItem = barButton
+        navigationItem.leftBarButtonItem = leftBarButton
 
+        let image = #imageLiteral(resourceName: "icon_plus").withRenderingMode(.alwaysTemplate)
+
+        let rightBarButton = UIBarButtonItem(image: image, style: .plain, target: self, action: nil)
+
+        rightBarButton.tintColor = UIColor(red: 237/255, green: 96/255, blue: 81/255, alpha: 1.0)
+
+        navigationItem.rightBarButtonItem = rightBarButton
     }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 
