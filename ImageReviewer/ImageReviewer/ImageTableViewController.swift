@@ -23,6 +23,12 @@ class ImageTableViewController: UITableViewController {
 
         let imageCell = UINib.init(nibName: cellID, bundle: nil)
         self.tableView.register(imageCell, forCellReuseIdentifier: cellID)
+        
+        let barButton = UIBarButtonItem.init(title: "My Journals", style: .plain, target: nil, action: nil)
+        
+        barButton.isEnabled = false
+        
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(title: "My Journals", style: .plain, target: nil, action: nil)
 
     }
 
