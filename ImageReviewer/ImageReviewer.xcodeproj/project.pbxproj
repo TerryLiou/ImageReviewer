@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8419AE2C1E97279000142780 /* ImagePicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8419AE2B1E97279000142780 /* ImagePicker.storyboard */; };
+		8AB6E3141E972EA000AA2FA8 /* ImageTable.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AB6E3131E972EA000AA2FA8 /* ImageTable.storyboard */; };
 		A0C515E31E972118008CEAE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C515E21E972118008CEAE4 /* AppDelegate.swift */; };
 		A0C515E51E972118008CEAE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C515E41E972118008CEAE4 /* ViewController.swift */; };
 		A0C515EA1E972118008CEAE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0C515E91E972118008CEAE4 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 
 /* Begin PBXFileReference section */
 		8419AE2B1E97279000142780 /* ImagePicker.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ImagePicker.storyboard; sourceTree = "<group>"; };
+		8AB6E3131E972EA000AA2FA8 /* ImageTable.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ImageTable.storyboard; sourceTree = "<group>"; };
 		A0C515DF1E972118008CEAE4 /* ImageReviewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageReviewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C515E21E972118008CEAE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0C515E41E972118008CEAE4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 			children = (
 				A0C515E21E972118008CEAE4 /* AppDelegate.swift */,
 				A0C515E41E972118008CEAE4 /* ViewController.swift */,
+				8AB6E3131E972EA000AA2FA8 /* ImageTable.storyboard */,
 				A0C515E91E972118008CEAE4 /* Assets.xcassets */,
 				A0C515EE1E972118008CEAE4 /* Info.plist */,
 				8419AE2B1E97279000142780 /* ImagePicker.storyboard */,
@@ -123,6 +126,7 @@
 			files = (
 				A0C515EA1E972118008CEAE4 /* Assets.xcassets in Resources */,
 				8419AE2C1E97279000142780 /* ImagePicker.storyboard in Resources */,
+				8AB6E3141E972EA000AA2FA8 /* ImageTable.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
