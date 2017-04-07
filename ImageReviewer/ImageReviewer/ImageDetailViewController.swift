@@ -1,6 +1,8 @@
 import UIKit
 
-class ImagePickerViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class ImageDetailViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+
+    static let identidier = "ImageDetailViewController"
 
     @IBOutlet weak var imageView: UIImageView!
 
@@ -8,6 +10,8 @@ class ImagePickerViewController: UIViewController, UIImagePickerControllerDelega
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        view.backgroundColor = UIColor.white
 
         let tap = UITapGestureRecognizer(target: self, action: #selector(pickImage))
         imageView.addGestureRecognizer(tap)

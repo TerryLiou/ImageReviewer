@@ -51,12 +51,23 @@ class ImageTableViewController: UITableViewController {
 
         let image = #imageLiteral(resourceName: "icon_plus").withRenderingMode(.alwaysTemplate)
 
-        let rightBarButton = UIBarButtonItem(image: image, style: .plain, target: self, action: nil)
+        let rightBarButton = UIBarButtonItem(image: image, style: .plain, target: self, action: #selector(pushImageDetailController))
 
         rightBarButton.tintColor = UIColor(red: 237/255, green: 96/255, blue: 81/255, alpha: 1.0)
 
         navigationItem.rightBarButtonItem = rightBarButton
     }
+
+    func pushImageDetailController() {
+
+        let storyboard = UIStoryboard(name: "ImagePicker", bundle: nil)
+
+        guard let controller = storyboard.instantiateViewController(withIdentifier: ImageDetailViewController.identidier) as? ImageDetailViewController else { return }
+
+        self.present(controller, animated: true, completion: nil)
+
+    }
+
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 
         return 3
