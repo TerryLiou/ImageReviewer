@@ -70,7 +70,7 @@ class ImageTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 
-        return 3
+        return 5
 
     }
 
@@ -87,5 +87,10 @@ class ImageTableViewController: UITableViewController {
 
         return 212
 
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
